@@ -1,2 +1,2 @@
 # gmmelo.github.io
-Website for AM E220
+Website for AME 220
