@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+* {
+    --hi-yellow: #eac435;
+    --hi-blue: #284677;
+    --hi-pink: #ee0033;
+    --lo-black: #191716;
+    --lo-white: #9cafb7;
+}
+
+html {
+    background-color: #9cafb7;
+    opacity: 1;
+    background-image: radial-gradient(var(--lo-white) 1.5px, var(--lo-black) 1.05px);
+    background-size: 21px 21px;
+
+    font-family: 'Sora';
+    color: var(--lo-black)
+
+}
+
+body {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 700px;
+    background: var(--lo-white)
+}
+
+header {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    background-color: var(--lo-black);
+    color: var(--lo-white);
+    width: fit-content;
+    padding: 0 0.2rem;
+}
+
+button {
+    background-color: var(--lo-white);
+    border-color: var(--hi-blue);
+    border-style: solid;
+    text-decoration: underline;
+    color: var(--hi-blue);
+    text-align: center;
+    font-weight: 600;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.aboutMeSection {
+    margin-bottom: 2.5rem;
+}
+
+.aboutMeSection:last-of-type {
+    margin-bottom: 0;
+}
+
+#atAGlanceCards {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 33.3333%;
+}
+
+.card button {
+    margin-top: auto;
+}
