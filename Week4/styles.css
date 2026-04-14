@@ -54,7 +54,7 @@ header {
 
 @media (max-width: 720px) {
     .cat-card {
-        height: 90dvh;
+        height: 90vh;
     }
     #cat-grid {
         grid-template-columns: 1fr;
