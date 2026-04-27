@@ -1,12 +1,16 @@
+/* Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
-    font-family: sans-serif;
+    font-family: "Roboto Mono", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background: #f0f2f5;
+    background: slateblue;
+    color: aliceblue;
 }
         
 header {
@@ -18,17 +22,24 @@ header {
 }
         
 #greeting-container {
+    font-size: 1.6em;
     text-align: center;
     transition: transform 0.3s;
     cursor: pointer;
 }
 
+#emoji {
+    display: inline;
+    font-size: 2em;
+}
+
+#greeting {
+    display: inline;
+    font-size: 1.5em;
+}
+
 #greeting-container:hover {
     transform: scale(1.2);
-}
-        
-#weather {
-    font-weight: bold;
 }
         
 footer {
@@ -41,6 +52,26 @@ footer {
 }
 
 .hint {
-    font-size: 0.8rem;
-    color: #666;
+    color: rgb(155, 155, 229);
+}
+
+button, input, #weather {
+    font-family: inherit;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 0;
+    border-style: solid;
+    border: 1px none transparent;
+    background-color: rgb(238, 225, 253);
+    color: rgb(90, 28, 148, 0.5);
+}
+
+#weather {
+    background-color: rgba(240, 248, 255, 0);
+    color: aliceblue;
+}
+
+button:hover {
+    cursor: crosshair;
+    background: rgb(216, 177, 238);
 }

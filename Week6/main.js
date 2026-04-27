@@ -1,6 +1,5 @@
 const nameInput = document.getElementById('nameInput');
 const greeting = document.getElementById('greeting');
-const emoji = document.getElementById('emoji');
 const hintText = document.getElementById('hintText');
 const audio = document.getElementById('bgMusic');
 const muteBtn = document.getElementById('muteBtn');
@@ -15,12 +14,11 @@ function updateGreeting() {
     else if (hour < 18) { timeMsg = "Good afternoon"; timeEmoji = "☀️"; }
     else { timeMsg = "Good evening"; timeEmoji = "🌙"; }
     
-    greeting.innerText = `${timeMsg}, ${userName}!`;
-    emoji.innerText = timeEmoji;
+    greeting.innerText = `${timeEmoji} ${timeMsg}, ${userName}!`;
 }
 
 nameInput.addEventListener('input', (e) => {
-    userName = e.target.value || "User";
+    userName = e.target.value || "stranger";
     updateGreeting();
 });
 
@@ -55,3 +53,4 @@ audio.play().catch(() => {
     console.log("User interaction required to start music.");
     muteBtn.innerText = "Play Music";
 });
+nameInput.value = "";
