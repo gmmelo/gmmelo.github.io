@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 6 - Custom Homepage!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="muteBtn">Mute Music</button>
+        <div id="weather">Loading weather...</div>
+    </header>
+
+    <div id="greeting-container">
+        <div id="emoji" style="font-size: 3rem;"></div>
+        <h1 id="greeting"></h1>
+    </div>
+
+    <footer>
+        <div class="hint" id="hintText">(Hint: put your mouse over the main greeting)</div>
+        <input type="text" id="nameInput" placeholder="Enter your name...">
+    </footer>
+
+    <audio id="bgMusic" loop>
+        <source src="bartender.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f2f5;
+}
+        
+header {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+        
+#greeting-container {
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+#greeting-container:hover {
+    transform: scale(1.2);
+}
+        
+#weather {
+    font-weight: bold;
+}
+        
+footer {
+    position: absolute;
+    bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hint {
+    font-size: 0.8rem;
+    color: #666;
+}
