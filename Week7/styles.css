@@ -14,7 +14,7 @@ body {
     align-items: center;
 
     margin: 0;
-    width: 100vw;
+    min-width: 100vw;
     min-height: 100vh;
     
     background-color: rgb(38, 46, 117);
