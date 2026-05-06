@@ -1,0 +1,160 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    
+    background-color: rgb(38, 46, 117);
+}
+
+#weather-card {
+    width: 600px;
+    height: 600px;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(13, 13, 59);
+    color: white;
+
+    overflow: hidden;
+}
+
+#top-weather-block {
+    padding: 1.8em;
+    flex-grow: 1;
+    
+    display: grid;
+    grid-template-rows: 1.8em 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    overflow: hidden;
+}
+
+#weather-header {
+    margin-top: 0em;
+    grid-column: span 2;
+
+    align-items: baseline;
+    margin-top: -0.2em;
+    font-size: 1.6em;
+    font-weight: 200;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#temperature-unit {
+    opacity: 0.7;
+    margin-left: auto;
+}
+
+#current-temperature {
+    margin-left: -0.05em;
+    margin-top: -1.4rem;
+    font-size: 10rem;
+    font-weight: 200;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#current-temperature div {
+    display: inline-block;
+    font-size: 0.3em;
+    margin-left: -0.5em;
+    top: 0;
+}
+
+#week-temperature {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7em 7em;
+
+    background-color: rgb(2, 2, 29);
+}
+
+.daily-temperature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.day-of-the-week {
+    grid-row: span 2;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcoming-temperature {
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    border: 1px solid rgba(73, 80, 138, 0.664);
+    color: rgb(222, 223, 228);
+    font-weight: 200;
+}
+
+.sunrise-sunset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sunrise, .sunset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming-hi-lo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: span 2;
+}
+
+.high-temperature, .low-temperature {
+    width: 4em;
+    text-align: end;
+}
+
+#top-weather-descriptors {
+    font-size: 1.3em;
+    font-weight: 200;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#top-weather-descriptors > * {
+    width: auto;
+    display: block;
+    text-align: end;
+}
+
+#top-weather-descriptors .sunrise, #top-weather-descriptors .sunset {
+    display: inline;
+}
+
+p {
+    margin: 0;
+}
