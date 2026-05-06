@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 7 Web Development Assignment</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div id="weather-card">
-        <div id="location"></div>
-        <div id="current-temperature"></div>
-        <div id="week-temperature"></div>
-        <div id="sunrise-sunset"></div>
+        <div id="location">Loading location...</div>
+        <div id="current-temperature">-°</div>
+        <div id="week-temperature">
+            <div id="day-1">-°</div>
+            <div id="day-2">-°</div>
+            <div id="day-3">-°</div>
+            <div id="day-4">-°</div>
+            <div id="day-5">-°</div>
+            <div id="day-6">-°</div>
+        </div>
+        <div id="sunrise-sunset">
+            <div id="sunrise">Loading...</div>
+            <div id="sunset">Loading...</div>
+        </div>
     </div>
 </body>
 </html>
